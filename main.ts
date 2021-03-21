@@ -5,7 +5,7 @@ load dependency
 "GHBit": "file:../pxt-ghbit"
 */
 
-//% color="#C814B8" weight=20 icon="\uf11b"
+//% color="#CAA4B8" weight=20 icon="\uf11b"
 namespace GHBit {
 
     const PCA9685_ADD = 0x41;
@@ -282,7 +282,7 @@ namespace GHBit {
             now_state = enRocker.Up;
 
         }
-        else if (x > 900) //下
+        else if (x > 700) //下
         {
 
             now_state = enRocker.Down;
@@ -293,7 +293,7 @@ namespace GHBit {
             {
                 now_state = enRocker.Right;
             }
-            else if (y > 900) //左
+            else if (y >700) //左
             {
                 now_state = enRocker.Left;
             }
